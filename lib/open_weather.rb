@@ -44,7 +44,7 @@ module OpenWeatherUtil
         # Atmosphere
         ret = 4
       when /^8/
-        # Atmosphere
+        # Cloud
         ret = 5
       else
         ret = 9
