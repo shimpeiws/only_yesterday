@@ -56,5 +56,3 @@ module OpenWeatherUtil
   end
 
 end
-
-OpenWeatherUtil::Search::byLL(45, 110)
