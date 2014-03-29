@@ -18,7 +18,10 @@ get '/api/test' do
 end
 
 get '/api' do
-  data = { foo: "bar" }
+  lat = params['lat']
+  lon = params['lon']
+  wether = OpenWeatherUtil::Search::byLL(lat, lon)
+  data = {wether: wether}
   json data
 end
 
