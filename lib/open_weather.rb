@@ -43,9 +43,9 @@ module OpenWeatherUtil
       when /^7/
         # Atmosphere
         ret = 4
-      when 801
+      when "801"
         ret = 6
-      when 802
+      when "802"
         ret = 6
       when /^8/
         # Cloud
