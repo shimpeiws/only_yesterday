@@ -43,6 +43,8 @@ module OpenWeatherUtil
       when /^7/
         # Atmosphere
         ret = 4
+      when "800"
+        ret = 6
       when "801"
         ret = 6
       when "802"
