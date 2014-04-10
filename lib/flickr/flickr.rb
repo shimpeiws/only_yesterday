@@ -3,6 +3,7 @@
 require 'open-uri'
 require 'json'
 require 'flickraw'
+require 'pp'
 require './../../secret/secret' if ENV['FLICKR_API_KEY'].nil?
 require './flickr_image'
 require './auth'
@@ -16,5 +17,5 @@ module FlickrUtil
 end
 
 FlickrUtil::Auth::test
-FlickrUtil::Search::get_recent
-p FlickrImage.new
+# pp FlickrUtil::Search::get_recent
+pp FlickrUtil::Search::get_photoset 72157631811283140
